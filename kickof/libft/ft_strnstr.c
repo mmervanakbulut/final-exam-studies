@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// strnstr: A function that locates the first occurrence of the substring needle in the string haystack,
+// searching only within the first len characters of haystack.
 char    *strnstr(const char *haystack, const char *needle, size_t len)
 {
     size_t i;
