@@ -1,5 +1,10 @@
 #include <stddef.h>  // size_t
 
+// ft_striteri: A function that applies a function to each character of a string
+// along with its index, modifying the string in place.
+// The function takes a string and a function pointer as arguments.
+// It iterates through the string, applying the function to each character
+// along with its index. If the string or function pointer is NULL, it does nothing.
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;

@@ -22,6 +22,8 @@ int	ft_is_in_set(char c, const char *set)
 
 // ft_strtrim: A function that trims leading and trailing characters from a string based on a set of characters.
 // It returns a new dynamically allocated string with the trimmed content, or NULL if memory allocation fails
+// or if the input string is NULL. The function iterates through the input string to find the first and last
+// characters that are not in the set, and then copies the substring between these indices into a new string.
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start = 0;

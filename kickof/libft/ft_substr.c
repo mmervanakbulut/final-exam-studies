@@ -1,5 +1,5 @@
 #include <stdlib.h>  // malloc
-#include <string.h>  // size_t
+#include <stdio.h>
 
 size_t	ft_strlen(const char *s)
 {
@@ -11,6 +11,10 @@ size_t	ft_strlen(const char *s)
 
 // ft_substr: A function that extracts a substring from a given string.
 // It takes a string, a starting index, and a length, and returns a new dynamically
+// allocated string containing the substring. If the starting index is beyond the
+// end of the string, it returns an empty string. If the length exceeds the remaining
+// length of the string, it adjusts the length accordingly. The returned string is
+// null-terminated. If memory allocation fails, it returns NULL.
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
@@ -49,7 +53,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	return (sub);
 }
-#include <stdio.h>
 
 int main(void)
 {

@@ -21,6 +21,9 @@ static size_t	ft_intlen(int n)
 
 // ft_itoa: A function that converts an integer to a string representation.
 // It handles negative numbers and returns a dynamically allocated string.
+// The function calculates the length of the number, allocates memory for the string,
+// and fills it with the digits of the number. If the number is zero, it returns
+// a string containing "0". If the number is negative, it adds a '-' sign at the beginning.
 char	*ft_itoa(int n)
 {
 	long	nb = n;

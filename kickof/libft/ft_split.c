@@ -45,6 +45,9 @@ static void	free_all(char **arr, size_t count)
 
 // ft_split: A function that splits a string into an array of words based on a delimiter character.
 // It returns a dynamically allocated array of strings, with each string being a word from the original
+// string. The function counts the number of words, allocates memory for the array, and then fills it
+// with the words. If memory allocation fails at any point, it frees all previously allocated memory
+// and returns NULL. The resulting array is null-terminated.
 char	**ft_split(char const *s, char c)
 {
 	char		**result;

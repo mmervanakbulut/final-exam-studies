@@ -3,6 +3,8 @@
 
 // ft_putnbr_fd: A function that writes an integer to a file descriptor.
 // It handles negative numbers and uses recursion to print each digit.
+// The function takes an integer and a file descriptor as arguments.
+// It converts the integer to a long to handle the edge case of INT_MIN.
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;

@@ -11,6 +11,10 @@ size_t	ft_strlen(const char *s)
 
 // ft_strmapi: A function that applies a function to each character of a string,
 // returning a new dynamically allocated string with the results.
+// The function takes a string and a function pointer as arguments.
+// It iterates through the string, applies the function to each character,
+// and stores the result in a new string. The new string is null-terminated.
+// If the input string or function pointer is NULL, it returns NULL.
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;

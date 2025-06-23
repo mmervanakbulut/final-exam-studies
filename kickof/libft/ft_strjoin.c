@@ -11,6 +11,7 @@ size_t	ft_strlen(const char *s)
 
 // ft_strjoin: A function that concatenates two strings into a new dynamically allocated string.
 // It returns a pointer to the new string, or NULL if memory allocation fails.
+// The new string is the result of appending s2 to s1. If either s1 or s2 is NULL, it returns NULL.
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*joined;
